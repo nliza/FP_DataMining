@@ -20,10 +20,10 @@ def load_model_and_vectorizer():
 model, vectorizer = load_model_and_vectorizer()
 
 # Judul aplikasi
-st.title("SVM Model Deployment")
+st.title("Sistem Prediksi Review Asli/Palsu pada Website Female Daily")
 
 # Input dari pengguna
-text_input = st.text_area("Masukkan teks untuk diprediksi:")
+text_input = st.text_area("Masukkan ulasan untuk diprediksi:")
 
 # Tombol prediksi
 if st.button("Prediksi"):
@@ -31,6 +31,6 @@ if st.button("Prediksi"):
         # Preprocessing dan prediksi
         input_vector = vectorizer.transform([text_input])
         prediction = model.predict(input_vector)
-        st.write(f"Prediksi: **{'Positive' if prediction[0] == 1 else 'Negative'}**")
+        st.write(f"Prediksi: **{'Ulasan tersebut adalah asli' if prediction[0] == 1 else 'Ulasan tersebut adalah palsu'}**")
     else:
-        st.write("Mohon masukkan teks untuk diprediksi.")
+        st.write("Mohon masukkan ulasan untuk diprediksi.")
