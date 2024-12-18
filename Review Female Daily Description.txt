@@ -1,0 +1,13 @@
+Review Female Daily
+
+Dataset berikut berisi mengenai review dari salah satu produk dari website Female Daily dengan deskripsi sebagai berikut:
+
+Username: nama pengguna yang memberikan ulasan.
+Profile Age:  usia profil pengguna dalam sistem.
+Profile Description: berisi deskripsi terkai tipe kulit pengguna.
+Usage Period: periode penggunaan produkyang diulas oleh pengguna.
+Purchase Point: tempat pengguna saat membeli produk tersebut
+Stars: rating yang diberikan oleh pengguna
+Recommend: menunjukkan apakah pengguna merekomendasikan produk kepada orang lain 
+Review: teks ulasan yang diberikan oleh pengguna mengenai produk digunakan.
+Status: menyatakan status ulasan, apakah ulasan tersebut asli atau palsu
